@@ -1,0 +1,9 @@
+There are five entities in this ER-diagram: Student, Enrollment, Lecture, Lecturer, and Subjects.
+
+Write the type of relationship between the entities and describe it.
+The relationship between Student and Enrollment is one-to-many. A student can sign up for multiple courses such as CS, Math, Physics, etc., thus there will be multiple Enrollment records. And an erollment belongs to only one student. 
+The relationship between Enrollment and Lecture is many-to-one. TAn Enrollment corresponds to a specific Lecture. A Lecture can have 0 or more Enrollments because a class can have many students participating.
+The relationship between Student and Lecture is many-to-many. A student can enrol in many lectures. A lecture can have many students.
+The relationship between Lecturer and Lecture is one-to-many. One lecture should have one lecturer, and each lecturer should have more than one lecture.
+The relationship between Lecture and Subjects is many-to-one. A Subject can contain multiple Lectures. A Lecture belongs to a Subject.
+The relationship between Lecturer and Subjects is many-to-many. A lecturer could attend more than one subjects, and a subject could have more than one lecturers.

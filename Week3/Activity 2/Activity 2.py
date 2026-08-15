@@ -1,4 +1,4 @@
-filename = "/Users/wupei/Documents/GitHub/YoobeeMSE800/Week3/junk.txt"
+filename = "/Users/wupei/Documents/GitHub/YoobeeMSE800/Week3/Activity 2/junk.txt"
 #Open, read, and process the attached data file. 
 with open(filename, "r") as data:
     lines = data.readlines()
