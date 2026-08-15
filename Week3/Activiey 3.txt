@@ -1,0 +1,13 @@
+There are five entities in this ER-diagram: Student, Enrollment, Lecture, Lecturer, and Subjects.
+
+add more one/ two attributes for any of the entities?
+Add ‘Student code’ in Student
+Add ‘Lecture id’ in Lecture
+
+Write the type of relationship between the entities and describe it.
+The relationship between Student and Enrollment is more-to-one. Each student can only enroll once, and the enrollment could include more than one student.
+The relationship between Student and Lecture is more-to-one. To enroll, each student could attend a lucture, and the lecture could include more than one student.
+The relationship between Enrollment and Lecture is one-to-one. There should a lecture for enrollment.
+The relationship between Lecturer and Lecture is one-to-more. One lecture should have one lecturer, and each lecturer should have more than one lecture.
+The relationship between Lecture and Subjects is more-to-more. A lecture could contain more than one subjects, and a subject could have more than one lectures.
+The relationship between Lecturer and Subjects is more-to-more. A lecturer could attend more than one subjects, and a subject could have more than one lecturers.
