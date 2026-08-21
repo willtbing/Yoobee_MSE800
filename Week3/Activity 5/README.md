@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Week 3 — Activity 5: Money Exchange System
 
 This README documents the Week3 / Activity 5 implementation for a simple Money Exchange System. It describes the database tables created, why each table is necessary, the relationships between them, and the structure and responsibilities of each program file in this directory.
@@ -141,6 +142,14 @@ Below is a per-file description describing the purpose, main classes/functions, 
 
 
 If any additional details or a different README format (e.g., including UML or SQL DDL) are needed, say which format is preferred and updates will be made.
+=======
+---
+
+## 🗄️ Database Tables & Justification
+
+A total of **4 database tables** have been created in SQLite. Below is a detailed description and justification for each table:
+
+>>>>>>> a0032f708e78859b68a3ab482df7f441e8dd9436
 ### 1. `customer`
 * **Purpose**: Stores information about registered clients using the money exchange service.
 * **Fields**:
