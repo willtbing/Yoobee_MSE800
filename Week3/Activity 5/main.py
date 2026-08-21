@@ -64,7 +64,7 @@ def user_exchange_currency(customer_id):
     transaction_date = input("Please enter the transaction date (YYYY-MM-DD): ")
     database.add_transaction(customer_id, exchange_rate.rate_id, amount, converted_amount, transaction_date)
 
-def user_exchaange_history(customer_id):
+def user_exchange_history(customer_id):
     transactions = database.get_transactions(customer_id)
     if transactions:
         for transaction in transactions:
@@ -85,7 +85,7 @@ def user_operate(customer_id):
         elif user_input == '2':
             user_exchange_currency(customer_id)
         elif user_input == '3':
-            user_exchaange_history(customer_id) 
+            user_exchange_history(customer_id) 
         elif user_input == '4':
             print("Thank you for using the Money Exchange System. Goodbye!")
             break
