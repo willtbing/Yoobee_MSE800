@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Week 3 — Activity 5: Money Exchange System
 
 This README documents the Week3 / Activity 5 implementation for a simple Money Exchange System. It describes the database tables created, why each table is necessary, the relationships between them, and the structure and responsibilities of each program file in this directory.
