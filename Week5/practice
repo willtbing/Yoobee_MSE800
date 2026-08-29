@@ -1,0 +1,71 @@
+"""
+Key1 = ['a', 'b', 'c', 'd', 'f', 'g', 'h', 'e', 'a']
+Value1 = [20, 3, 1, 88, 55, 92, 6, 90, 910]
+Dict1 = {k: v for k, v in zip(Key1, Value1)}
+Key2 = ['u', 'b', 'o', 'x',  'e', 'a']
+Value2 = [200, 30, 10, 88, 55, 920]
+Dict2 = {k: v for k, v in zip(Key2, Value2)}
+merged_dict = {**{k: v for k, v in Dict1.items() if v % 2 == 1},
+               **{k: v for k, v in Dict2.items() if v % 2 == 1}}
+print(merged_dict)
+"""
+
+# extract information with age greater than 25 from the following list of dictionaries
+data = [{"name": "Alice", "age": 28}, {"name": "Bob", "age": 24}, {"name": "Charlie", "age": 30}]
+result = []
+for person in data:
+    if person["age"] > 25:
+        result.append(person)
+print(result)
+
+# use list comprehension to flatten the matrix
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+result = []
+for item1 in matrix:
+    for item2 in item1:
+        result.append(item2)
+print(result)
+
+# use enumerate() for looping to add 5 extra point to each grade in the list, the 5th one add 10 
+grades = [88, 92, 78, 65, 50, 94]
+for i, grade in enumerate(grades, start=1):
+    if i==5:
+        print(i, grade+10)
+    else:
+        print(i, grade+5)
+
+# filter out elements depend on their index: 
+# use list comprehension and enumerate() to get elements with even index
+data = [100, 200, 300, 400, 500]
+result = []
+for i, item in enumerate(data, start=1):
+    if i%2 ==1:
+        result.append(item)
+print(result)
+
+# create a dictionary from lists using zip()
+keys = ['name', 'age', 'grade']
+values = ['Alice', 25, 'A']
+dictionary = {k: v for k, v in zip(keys, values)}
+print(dictionary)
+
+# sort the dictionary based on the ages using lambda
+students = [
+    {'name': "John", 'grade': "A", 'age': 20}, 
+    {'name': "Jane", 'grade': "B", 'age': 21}, 
+    {'name': "Joss", 'grade': "A+", 'age': 19}, 
+    {'name': "Jack", 'grade': "A-", 'age': 16}, 
+    {'name': "Dave", 'grade': "C", 'age': 25}, 
+]
+students.sort(key=lambda student: student['age'])
+for student in students:
+    print(student)
+
+# Sort by age, then by salary if ages are the same
+# use lambda
+employees = [
+    {'name': 'Alice', 'age': 30, 'salary': 80000},
+    {'name': 'Bob', 'age': 25, 'salary': 50000},
+    {'name': 'Charlie', 'age': 25, 'salary': 40000},
+]
+students.sort(key=lambda employee: employees['age'])
